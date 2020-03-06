@@ -152,11 +152,17 @@ ul {
     display: flex;
     flex-flow: wrap;
 }
+.news h4 {
+    text-align: center;
+}
+.news p {
+    text-align: justify;
+}
 .card {
     width: 28%;
     margin: 2%;
     box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #29272b;
 }
 .times {
     display: flex;
@@ -191,7 +197,7 @@ ul {
     text-align: center;
     padding: 1.5em;
     box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #1f1f20;
 }
 .recentes a {
     display: flex;
@@ -436,5 +442,41 @@ fieldset label {
     }
     .campea {
         display: none;
+    }
+    .about .container div {
+        width: 90%;
+        text-align: justify;
+    }
+    .about .container h1 {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    #horarios .container {
+        flex-direction: column;
+    }
+    .ao_vivo, .em_breve {
+        padding: 0;
+        border: none;
+    }
+    .partidas {
+        margin: 1em 0;
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card img {
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .news {
+        width: 95%;
+        padding-right: 15px;
+    }
+    .recentes {
+        padding: 0.5em;
+    }
+    .content {
+        flex-direction: column;
     }
 }
