@@ -103,7 +103,6 @@ ul {
 #horarios{
     width: 100%;
     min-height: 120px;
-    height: 120px;
     margin: 30px 0;
     background: rgba(67,43,95,1);
     background: -moz-linear-gradient(top, rgba(67,43,95,1) 0%, rgba(30,28,33,1) 100%);
@@ -133,6 +132,7 @@ ul {
     padding: 30px 0;
 }
 #horarios h2 {
+    width: 100%;k,
     margin: 0px 15px;
     text-align: center;
 }
@@ -144,7 +144,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 200px;
+    min-width: 150px;
 }
 .content {
     display: flex;
@@ -227,7 +227,7 @@ footer .sociais {
 footer .container {
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 2em 0;
 }
 footer h5 {
     padding-bottom: 1.2em;
@@ -262,4 +262,148 @@ footer h6 {
     justify-content: center;
     text-transform: uppercase;
     padding-top: 5em;
+}
+.titulo_pagina h1 {
+    font-size: 3em;
+    text-shadow: 5px 0 10px #1e1c21;
+}
+.cadastro {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 1.125em;
+    margin: 5em auto;
+    padding: 3em;
+    box-shadow: 1px 1px 5px #7278c3, -1px -1px 5px #fc1e8b;
+}
+.cadastro button {
+    padding: 0.5em 1em;
+}
+.btn1 {
+    border: none;
+    border-radius: 4px;
+}
+.campo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0.3em;
+}
+.terms {
+    padding: 2em 0;
+    font-size: 0.9em;
+    text-transform: capitalize;
+}
+.sexo {
+    width: 100%;
+    margin-top: 1em;
+    padding-top: 1em;
+    border: none;
+}
+input[type="text"],
+input[type="email"], 
+input[type="password"],
+input[type="date"],
+select {
+    border: none;
+    background-color: #1e1c21;
+    color: white;
+    border-bottom: solid 1px #474747;
+    width: 50%;
+    padding: .5em;
+}
+select {
+    color: #6b686e;
+}
+input[type="date"] {
+    color: #4e4c52;
+    text-align: center;
+    font-size: 1em;
+}
+input:focus, select:focus{
+    outline: none;
+    background-color: #2b282e;
+    border-bottom: solid 1px #7e7e7e;
+}
+fieldset{
+    width: 100%;
+}
+input[type="radio"]{
+    margin-right: 0.1em;
+}
+fieldset label {
+    margin-right: 0.5em;
+    font-size: 0.897em;
+}
+ @media screen and (max-width: 1200px) {
+    .campea {
+        right: 0%;
+    }
+    .about .container div {
+        width: 50%;
+    }
+    .container {
+        width: 98%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header img {
+        max-width: 180px;
+    }
+    .container {
+        width: 98%;
+    }
+    .campea {
+        max-width: 400px;
+        margin-top: 60px;
+        right: 0%;
+    }
+    .about .container div {
+        width: 55%;
+        margin-left: 30px;
+    }
+    .ao_vivo, .em_breve {
+        padding: 0 5px;
+    }
+    .ao_vivo {
+        padding: 5.3em 5px;
+        width: 50%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .em_breve {
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .em_breve .partidas {
+        margin: 0.5em 0;
+    }
+    .news {
+        flex-direction: column;
+    }
+    .card {
+        display: flex;
+        width: 100%;
+    }
+    .card img {
+        width: 30%;
+    }
+    footer .container {
+        padding-top: 1em;
+        width: 94%;
+    }
+    .mob_sociais {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mob_sociais {
+        max-width: 180px;
+    }
 }
