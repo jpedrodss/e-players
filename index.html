@@ -11,16 +11,21 @@
 <body>
     <header>
         <div class="container top">
-            <a href="index.html">
-                <img src="images/Logo.svg" alt="Logo E-Players">
-            </a>
-            <nav>
+            <div>
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                    <a href="index.html">
+                    <img src="images/Logo.svg" alt="Logo E-Players">
+                </a>
+            </div>
+            <nav id="menu">
                 <ul>
                     <li><a href="index.html" title="Voltar para a página inicial">INÍCIO</a></li>
                     <li><a href="index.html#horarios" title="Ir até a sessão de horários das partidas">HORÁRIOS</a></li>
                     <li><a href="index.html#resultados" title="Ir até a sessão de resultados das partidas">RESULTADOS</a></li>
                     <li><a href="index.html#noticias" title="Ir até a sessão de notícias">NOTÍCIAS</a></li>
-                    <li><a href="#" title="Buscar Conteudo no Site"><i class="fas fa-search"></i></a></li>
+                    <li><a href="index.html#" title="Buscar Conteudo no Site"><i class="fas fa-search"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -79,35 +84,48 @@
                 </div>
             </section>
             <div class="container content">
-                <section id="noticias" class="news">
+                <section class="news">
                     <div class="card">
                         <img src="images/Teams/T1.jpeg" alt="Notícia sobre assunto 1">
+                        <div>
                         <h4>Título da Notícia</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ratione earum dolorem facilis dolor accusantium sit fugit, aspernatur molestias cupiditate voluptate, ipsum aliquam assumenda dicta numquam similique atque suscipit.</p>
+                        </div>
                     </div>
                     <div class="card">
-                        <img src="images/Teams/T2.jpg" alt="Notícia sobre assunto 1">                       <h4>Título da Notícia</h4>
+                        <img src="images/Teams/T2.jpg" alt="Notícia sobre assunto 1">
+                        <div>
+                        <h4>Título da Notícia</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ratione earum dolorem facilis dolor accusantium sit fugit, aspernatur molestias cupiditate voluptate, ipsum aliquam assumenda dicta numquam similique atque suscipit.</p>
+                        </div>
                     </div>
                     <div class="card">
                         <img src="images/Teams/T3.jpeg" alt="Notícia sobre assunto 1">
+                        <div>
                         <h4>Título da Notícia</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ratione earum dolorem facilis dolor accusantium sit fugit, aspernatur molestias cupiditate voluptate, ipsum aliquam assumenda dicta numquam similique atque suscipit.</p>
+                        </div>
                     </div>
                     <div class="card">
                         <img src="images/Teams/T4.jpg" alt="Notícia sobre assunto 1">
+                        <div>
                         <h4>Título da Notícia</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ratione earum dolorem facilis dolor accusantium sit fugit, aspernatur molestias cupiditate voluptate, ipsum aliquam assumenda dicta numquam similique atque suscipit.</p>
+                        </div>
                     </div>
                     <div class="card">
                         <img src="images/Teams/T5.jpeg" alt="Notícia sobre assunto 1">
+                        <div>
                         <h4>Título da Notícia</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ratione earum dolorem facilis dolor accusantium sit fugit, aspernatur molestias cupiditate voluptate, ipsum aliquam assumenda dicta numquam similique atque suscipit.</p>
+                        </div>
                     </div>
                     <div class="card">
                         <img src="images/Teams/T7.jpeg" alt="Notícia sobre assunto 1">
+                        <div>
                         <h4>Título da Notícia</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio ratione earum dolorem facilis dolor accusantium sit fugit, aspernatur molestias cupiditate voluptate, ipsum aliquam assumenda dicta numquam similique atque suscipit.</p>
+                        </div>
                     </div>
                 </section>
                 <section class="recentes" id="resultados">
@@ -223,7 +241,7 @@
                     <ul><a href="#">Termos de Uso</a></ul>
                     <ul><a href="#">Anuncie</a></ul>
                 </div>
-                <div>
+                <div class="mob_sociais">
                     <img src="images/Logo.svg" alt="Logo do projeto E-Players">
                     <div class="sociais">
                         <i class="fab fa-facebook"></i>
@@ -244,5 +262,15 @@
                 <p>Todos os Direitos Reservados - SENAI SP.</p>
             </div>
         </footer>
+        <script>
+        function botaoMenu(){
+            var m = document.getElementById("menu");
+            if(m.style.display == "block"){
+                m.style.display = "none";
+            }else{
+                m.style.display = "block";
+            }
+        }
+        </script>
 </body>
 </html>

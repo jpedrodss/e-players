@@ -44,10 +44,6 @@ ul {
     padding: 20px 0;
     box-shadow: 0px 13px 10px rgba(0, 0, 0, 0.5);
 }
-.top li :hover{
-    padding: 3px 0;
-    border-bottom: solid 2px #fff;
-}
 .top nav {
     width: 60%;
 }
@@ -103,7 +99,6 @@ ul {
 #horarios{
     width: 100%;
     min-height: 120px;
-    height: 120px;
     margin: 30px 0;
     background: rgba(67,43,95,1);
     background: -moz-linear-gradient(top, rgba(67,43,95,1) 0%, rgba(30,28,33,1) 100%);
@@ -133,6 +128,7 @@ ul {
     padding: 30px 0;
 }
 #horarios h2 {
+    width: 100%;
     margin: 0px 15px;
     text-align: center;
 }
@@ -141,7 +137,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 200px;
+    min-width: 150px;
 }
 .content {
     display: flex;
@@ -153,11 +149,17 @@ ul {
     display: flex;
     flex-flow: wrap;
 }
+.news h4 {
+    text-align: center;
+}
+.news p {
+    text-align: justify;
+}
 .card {
     width: 28%;
     margin: 2%;
     box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #29272b;
 }
 .times {
     display: flex;
@@ -192,7 +194,7 @@ ul {
     text-align: center;
     padding: 1.5em;
     box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #1f1f20;
 }
 .recentes a {
     display: flex;
@@ -224,7 +226,7 @@ footer .sociais {
 footer .container {
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 2em 0;
 }
 footer h5 {
     padding-bottom: 1.2em;
@@ -253,7 +255,7 @@ footer h6 {
     width: 100%;
     height: 330px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     color: white;
     display: flex;
     justify-content: center;
@@ -338,7 +340,12 @@ fieldset label {
     margin-right: 0.5em;
     font-size: 0.897em;
 }
- @media screen and (max-width: 1200px) {
+.top .fa-bars{
+    color: var(--purple);
+    font-size: 2em;
+    display: none;
+}
+@media screen and (max-width: 1200px) {
     .campea {
         right: 0%;
     }
@@ -357,12 +364,116 @@ fieldset label {
         width: 98%;
     }
     .campea {
-        max-width: 500px;
-        margin-top: 50px;
-        right: -100px;
+        max-width: 400px;
+        margin-top: 60px;
+        right: 0%;
     }
     .about .container div {
         width: 55%;
         margin-left: 30px;
+    }
+    .ao_vivo, .em_breve {
+        padding: 0 5px;
+    }
+    .ao_vivo {
+        padding: 5.3em 5px;
+        width: 50%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .em_breve {
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .em_breve .partidas {
+        margin: 0.5em 0;
+    }
+    .news {
+        flex-direction: column;
+    }
+    .card {
+        display: flex;
+        width: 100%;
+    }
+    .card img {
+        width: 30%;
+    }
+    footer .container {
+        padding-top: 1em;
+        width: 94%;
+    }
+    .mob_sociais {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mob_sociais {
+        max-width: 180px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .top .fa-bars{
+        display: block;
+    }
+    .top div {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 2em;
+    }
+    #menu {
+        position: absolute;
+        top: 73px;
+        width: 100%;
+        background-color: var(--background);
+        display: none;
+    }
+    .top ul {
+        flex-direction: column;
+        height: 250px;
+    }
+    .top ul a {
+        padding: .5em 80% .5em .5em;
+        margin: 0 3.3em;
+    }
+    .campea {
+        display: none;
+    }
+    .about .container div {
+        width: 90%;
+        text-align: justify;
+    }
+    .about .container h1 {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    #horarios .container {
+        flex-direction: column;
+    }
+    .ao_vivo, .em_breve {
+        padding: 0;
+        border: none;
+    }
+    .partidas {
+        margin: 1em 0;
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card img {
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .news {
+        width: 95%;
+        padding-right: 15px;
+    }
+    .recentes {
+        padding: 0.5em;
+    }
+    .content {
+        flex-direction: column;
     }
 }
