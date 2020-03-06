@@ -11,16 +11,21 @@
 <body>
     <header>
         <div class="container top">
-            <a href="index.html">
-                <img src="images/Logo.svg" alt="Logo E-Players">
-            </a>
-            <nav>
+            <div>
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                    <a href="index.html">
+                    <img src="images/Logo.svg" alt="Logo E-Players">
+                </a>
+            </div>
+            <nav id="menu">
                 <ul>
                     <li><a href="index.html" title="Voltar para a página inicial">INÍCIO</a></li>
                     <li><a href="index.html#horarios" title="Ir até a sessão de horários das partidas">HORÁRIOS</a></li>
                     <li><a href="index.html#resultados" title="Ir até a sessão de resultados das partidas">RESULTADOS</a></li>
                     <li><a href="index.html#noticias" title="Ir até a sessão de notícias">NOTÍCIAS</a></li>
-                    <li><a href="#" title="Buscar Conteudo no Site"><i class="fas fa-search"></i></a></li>
+                    <li><a href="index.html#" title="Buscar Conteudo no Site"><i class="fas fa-search"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -32,7 +37,7 @@
             <div class="about">
                 <div class="container">
                     <div>
-                        <h1>O que é o mundo<br>comum?</h1>
+                        <h1>O que é o mundo comum?</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsam sunt illo voluptate expedita, veritatis voluptates repudiandae adipisci libero quidem odio repellat. Provident enim vero molestias itaque nemo harum laudantium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, neque. Laborum assumenda impedit eos officia voluptatem eveniet, est ex quas ab ut accusamus sed fuga deleniti placeat rem vero perspiciatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, libero. Eos et delectus exercitationem error recusandae aspernatur asperiores, officiis consectetur sit nam, quo sint obcaecati facere quasi natus assumenda molestias? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum optio eaque aliquid assumenda, accusantium fuga necessitatibus quis dolores dolor odit, at quas obcaecati officia dolore unde animi, magnam earum voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
@@ -257,5 +262,15 @@
                 <p>Todos os Direitos Reservados - SENAI SP.</p>
             </div>
         </footer>
+        <script>
+        function botaoMenu(){
+            var m = document.getElementById("menu");
+            if(m.style.display == "block"){
+                m.style.display = "none";
+            }else{
+                m.style.display = "block";
+            }
+        }
+        </script>
 </body>
 </html>
