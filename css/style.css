@@ -44,10 +44,6 @@ ul {
     padding: 20px 0;
     box-shadow: 0px 13px 10px rgba(0, 0, 0, 0.5);
 }
-.top li :hover{
-    padding: 3px 0;
-    border-bottom: solid 2px #fff;
-}
 .top nav {
     width: 60%;
 }
@@ -103,7 +99,6 @@ ul {
 #horarios{
     width: 100%;
     min-height: 120px;
-    height: 120px;
     margin: 30px 0;
     background: rgba(67,43,95,1);
     background: -moz-linear-gradient(top, rgba(67,43,95,1) 0%, rgba(30,28,33,1) 100%);
@@ -133,56 +128,383 @@ ul {
     padding: 30px 0;
 }
 #horarios h2 {
+    width: 100%;
     margin: 0px 15px;
     text-align: center;
-}
-.em_breve {
-    width: 60%;
 }
 .partidas {
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 200px;
+    min-width: 150px;
+}
+.content {
+    display: flex;
+    color: white;
 }
 .news {
-    width: 100%;
-    height: 800px;
+    width: 70%;
+    padding-right: 40px;
     display: flex;
-    justify-content: space-evenly;
+    flex-flow: wrap;
 }
-.artigos {
-    width: 260px;
-    height: 400px;
+.news h4 {
+    text-align: center;
+}
+.news p {
+    text-align: justify;
+}
+.card {
+    width: 28%;
+    margin: 2%;
     box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: #29272b;
 }
-.text {
-    padding: 3px 10px;
-}
-.text h3 {
-    font-size: 17px;
-}
-.artigos img {
-    width: 260px;
-}
-.artigos a {
+.times {
     display: flex;
     justify-content: center;
-    text-decoration: none;
-    color: white;
-    padding: 10px;
+    align-items: center;
 }
-.artigos a:hover {
-    background-color: #2c2b2e;
+.times strong, .times img {
+    padding: 0 10px;
+}
+.times i {
+    color: #777;
+}
+.card img {
+    width: 100%;
+    height: 140px;
+}
+.card h4 {
+    padding: 1em 0 0 1em;
+}
+.card p {
+    padding: 1em;
+    font-size: 0.85em;
+}
+.resultado {
+    text-align: center;
+    margin: 1.2em 0;
+}
+.resultado img {
+    width: 35px;
 }
 .recentes {
-    width: 260px;
-    height: 800px;
+    text-align: center;
+    padding: 1.5em;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.5);
+    background-color: #1f1f20;
+}
+.recentes a {
+    display: flex;
+    justify-content: center;
+}
+.placar {
+    font-size: 1.5em;
+    text-shadow: 3px 3px 6px #000;
+}
+footer {
     box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.5);
     color: white;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.3);}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer ul {
+    list-style-type: none;
+}
+footer .sociais {
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--purple);
+    font-size: 2em;
+    padding: 1.5em 0;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+footer h5 {
+    padding-bottom: 1.2em;
+    color: #696969;
+    font-size: 1.5em;
+}
+footer h6 {
+    text-align: end;
+    font-size: 1.1em;
+}
+.copyright {
+    width: 100%;
+    height: 50px;
+    color: #696969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 14px;
-    padding: 10px 0;
+    background-color: #1a1a1a;
+}
+
+/* Página de Cadastro */
+
+.titulo_pagina {
+    background-image: url("../images/cadastro.png");
+    width: 100%;
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-top: 5em;
+}
+.titulo_pagina h1 {
+    font-size: 3em;
+    text-shadow: 5px 0 10px #1e1c21;
+}
+.cadastro {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 1.125em;
+    margin: 5em auto;
+    padding: 3em;
+    box-shadow: 1px 1px 5px #7278c3, -1px -1px 5px #fc1e8b;
+}
+.cadastro button {
+    padding: 0.5em 1em;
+}
+.btn1 {
+    border: none;
+    border-radius: 4px;
+}
+.campo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0.3em;
+}
+.terms {
+    padding: 2em 0;
+    font-size: 0.9em;
+    text-transform: capitalize;
+}
+.sexo {
+    width: 100%;
+    margin-top: 1em;
+    padding-top: 1em;
+    border: none;
+}
+input[type="text"],
+input[type="email"], 
+input[type="password"],
+input[type="date"],
+select {
+    border: none;
+    background-color: #1e1c21;
+    color: white;
+    border-bottom: solid 1px #474747;
+    width: 50%;
+    padding: .5em;
+}
+select {
+    color: #6b686e;
+}
+input[type="date"] {
+    color: #4e4c52;
+    text-align: center;
+    font-size: 1em;
+}
+input:focus, select:focus{
+    outline: none;
+    background-color: #2b282e;
+    border-bottom: solid 1px #7e7e7e;
+}
+fieldset{
+    width: 100%;
+}
+input[type="radio"]{
+    margin-right: 0.1em;
+}
+fieldset label {
+    margin-right: 0.5em;
+    font-size: 0.897em;
+}
+.top .fa-bars{
+    color: var(--purple);
+    font-size: 2em;
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .campea {
+        right: 0%;
+    }
+    .about .container div {
+        width: 50%;
+    }
+    .container {
+        width: 98%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header img {
+        max-width: 180px;
+    }
+    .container {
+        width: 98%;
+    }
+    .campea {
+        max-width: 400px;
+        margin-top: 60px;
+        right: 0%;
+    }
+    .about .container div {
+        width: 55%;
+        margin-left: 30px;
+    }
+    .ao_vivo, .em_breve {
+        padding: 0 5px;
+    }
+    .ao_vivo {
+        padding: 5.3em 5px;
+        width: 50%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .em_breve {
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .em_breve .partidas {
+        margin: 0.5em 0;
+    }
+    .news {
+        flex-direction: column;
+    }
+    .card {
+        display: flex;
+        width: 100%;
+    }
+    .card img {
+        width: 30%;
+    }
+    footer .container {
+        padding-top: 1em;
+        width: 94%;
+    }
+    .mob_sociais {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mob_sociais {
+        max-width: 180px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .top .fa-bars{
+        display: block;
+    }
+    .top div {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 2em;
+    }
+    #menu {
+        position: absolute;
+        top: 73px;
+        width: 100%;
+        background-color: var(--background);
+        display: none;
+    }
+    .top ul {
+        flex-direction: column;
+        height: 250px;
+    }
+    .top ul a {
+        padding: .5em 66% .5em .5em;
+        margin: 0 0 0 3.3em;
+    }
+    .campea {
+        display: none;
+    }
+    .about .container div {
+        width: 90%;
+        text-align: justify;
+    }
+    .about .container h1 {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    #horarios .container {
+        flex-direction: column;
+    }
+    .ao_vivo, .em_breve {
+        padding: 0;
+        border: none;
+        align-items: center;
+    }
+    .ao_vivo div, .em_breve div {
+        padding: .8em;
+    }
+    .partidas {
+        margin: 1.5em 0;
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card img {
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .news {
+        width: 95%;
+        padding-right: 15px;
+    }
+    .recentes {
+        padding: 0.5em;
+    }
+    .content {
+        flex-direction: column;
+    }
+    footer div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer a {
+        padding: .5em 2em;
+    }
+    footer ul {
+        padding: .6em;
+    }
+    .a1 {
+        order: 2;
+    }
+    footer h5 {
+        padding-top: 1em;
+    }
+    .mob_sociais{
+        padding: .5em 0 0 0;
+    }
+    .sociais {
+       flex-direction: row;
+    }
+    .sociais i {
+        padding: 0 .65em;
+    }
 }
