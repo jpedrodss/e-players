@@ -133,9 +133,10 @@ ul {
     text-align: center;
 }
 .partidas {
+    width: 100%;
     padding: 0 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     min-width: 150px;
 }
@@ -221,7 +222,7 @@ footer .sociais {
     justify-content: space-evenly;
     color: var(--purple);
     font-size: 2em;
-    padding: 1.5em 0;
+    padding: 2em 0 1em;
 }
 footer .container {
     display: flex;
@@ -364,7 +365,7 @@ fieldset label {
         width: 98%;
     }
     .campea {
-        max-width: 400px;
+        max-width: 350px;
         margin-top: 60px;
         right: 0%;
     }
@@ -409,6 +410,16 @@ fieldset label {
     }
     .mob_sociais {
         max-width: 180px;
+    }
+    .titulo_pagina {
+        height: 200px;
+        padding-top: 2em;
+    }
+    .titulo_pagina h1 {
+        font-size: 2.5em;
+    }
+    .cadastro {
+        margin: auto;
     }
 }
 @media screen and (max-width: 460px) {
@@ -506,5 +517,28 @@ fieldset label {
     }
     .sociais i {
         padding: 0 .65em;
+    }
+    .titulo_pagina {
+        height: 100px;
+        background-size: cover;
+        background-position: center;
+        padding-top: 1em;
+    }
+    .titulo_pagina h1 {
+        font-size: 2em;
+    }
+    .cadastro {
+        margin: 3em auto;
+        max-width: 300px;
+        font-size: 1em;
+    }
+    .campo input {
+        width: 45%;
+    }
+    fieldset {
+        width: 50%;
+    }
+    #check {
+        width: 10%;
     }
 }
