@@ -133,9 +133,10 @@ ul {
     text-align: center;
 }
 .partidas {
+    width: 100%;
     padding: 0 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     min-width: 150px;
 }
@@ -221,7 +222,7 @@ footer .sociais {
     justify-content: space-evenly;
     color: var(--purple);
     font-size: 2em;
-    padding: 1.5em 0;
+    padding: 2em 0 1em;
 }
 footer .container {
     display: flex;
@@ -364,7 +365,7 @@ fieldset label {
         width: 98%;
     }
     .campea {
-        max-width: 400px;
+        max-width: 350px;
         margin-top: 60px;
         right: 0%;
     }
@@ -410,6 +411,16 @@ fieldset label {
     .mob_sociais {
         max-width: 180px;
     }
+    .titulo_pagina {
+        height: 200px;
+        padding-top: 2em;
+    }
+    .titulo_pagina h1 {
+        font-size: 2.5em;
+    }
+    .cadastro {
+        margin: auto;
+    }
 }
 @media screen and (max-width: 460px) {
     .top .fa-bars{
@@ -434,8 +445,8 @@ fieldset label {
         height: 250px;
     }
     .top ul a {
-        padding: .5em 80% .5em .5em;
-        margin: 0 3.3em;
+        padding: .5em 66% .5em .5em;
+        margin: 0 0 0 3.3em;
     }
     .campea {
         display: none;
@@ -454,9 +465,13 @@ fieldset label {
     .ao_vivo, .em_breve {
         padding: 0;
         border: none;
+        align-items: center;
+    }
+    .ao_vivo div, .em_breve div {
+        padding: .8em;
     }
     .partidas {
-        margin: 1em 0;
+        margin: 1.5em 0;
     }
     .card {
         flex-direction: column;
@@ -475,5 +490,55 @@ fieldset label {
     }
     .content {
         flex-direction: column;
+    }
+    footer div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer a {
+        padding: .5em 2em;
+    }
+    footer ul {
+        padding: .6em;
+    }
+    .a1 {
+        order: 2;
+    }
+    footer h5 {
+        padding-top: 1em;
+    }
+    .mob_sociais{
+        padding: .5em 0 0 0;
+    }
+    .sociais {
+       flex-direction: row;
+    }
+    .sociais i {
+        padding: 0 .65em;
+    }
+    .titulo_pagina {
+        height: 100px;
+        background-size: cover;
+        background-position: center;
+        padding-top: 1em;
+    }
+    .titulo_pagina h1 {
+        font-size: 2em;
+    }
+    .cadastro {
+        margin: 3em auto;
+        max-width: 300px;
+        font-size: 1em;
+    }
+    .campo input {
+        width: 45%;
+    }
+    fieldset {
+        width: 50%;
+    }
+    #check {
+        width: 10%;
     }
 }
